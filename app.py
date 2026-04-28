@@ -47,7 +47,7 @@ if uploaded_file is not None:
     st.subheader("Top 10 Most Frequent Words")
 
     # Filter out common short words to make the chart more interesting
-    stop_words = ["the", "and", "to", "of", "a", "in", "is", "it", "that", "with", "as", "for"]
+    stop_words = ["the", "and", "to", "of", "a", "in", "is", "it", "that", "with", "as", "for", "on","or","this"]
     filtered_words = [w for w in words if w not in stop_words]
 
     word_freq = Counter(filtered_words).most_common(10)
